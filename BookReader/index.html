@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Reader</title>
+</head>
+<body>
+    <h1>E-Reader ProBook</h1>
+<div class="wrapper">
+    <aside class="input">
+        <p>Pick your book (UTF-8) from disk: </p>
+        <input type='file' id='chooseFile'>
+        <br>
+        <hr>
+        <span><strong>For Example:</strong></span>  
+        <br>      
+        <br>      
+        <code>https://www.w3.org/TR/PNG/iso_8859-1.txt</code>
+        <br>    
+        <br>    
+        <input type="text" id= 'url' placeholder="🔗 Enter URL">
+        <input type="button" value="Open" id='getFromUrl' >
+        <br>
+        <hr>
+        <input id= 'directInput' rows="3" cols="38" placeholder="📙 Paste your text Here">
+        <input type="button" value="Read" id='getFromUser' >
+        <br>
+        <hr>
+        <div>
+            <br>
+            <span id="author">Author:</span>
+            <br>
+            <br>
+            <span id="price">Price:</span>
+            <br>
+            <br>
+            <span id="pages">Page(s):</span>
+        </div>
+    </aside>
+    
+    <main class="output">
+        <div id="headControls">
+            <button id="findButton">Find</button>
+            <input type="text" id="find" placeholder="🔎 Search">
+            <span id="cP">Page №</span>
+            <input type="text" id="jumpTo" placeholder="↪ Jump to page">
+            <button id="jumpButton">Jump</button>
+        </div>
+        <div class="text">
+            <p id="output">
+                Welcome this is an E-Reader ProBook
+            </p>
+        </div>    
+        <div id="controls">
+            <button id="prev">⏪Prev</button>
+            <button id="continue">Continue 🔼</button>
+            <button id="next">Next ⏩</button>
+        </div>
+    </main>
+</div>
+    
+<script src="app.js"></script>
+</body>
+</html>
